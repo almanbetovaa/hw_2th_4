@@ -11,8 +11,13 @@ var square = (numbers) => {
 console.log(square([1,2,3,4,5,6,7,8,9]))
 
 
-//1
+//3
 var findWords = (words) => {
     result = []
-    for (let i)
+    for (let word of words) {
+        if (word.includes('t' && word.includes('a')))
+            result.push(word)
+        return result
+    }
 }
+console.log(findWords(['frontend', 'apple', 'text', 'course', 'test']))
